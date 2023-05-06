@@ -11,6 +11,6 @@ app.get("/api", (req, res) => res.type('json').send({name: 'tiago'}));
 app.use('/v1/api', require("./src/routes"));
 app.listen(port, () => console.log(`listening on port ${port}!`));
 
-export default app;
+module.exports=app;
 
 
