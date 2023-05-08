@@ -39,8 +39,8 @@ module.exports = {
                             return;
                         }
 
-                        res.set("x-access-token", token);
-                        res.end();
+                        res.status(200).json({data: token});
+                        
                     });
                 } else {
                     res.status(500).json({data: 'Email ou senha inválidos'})
