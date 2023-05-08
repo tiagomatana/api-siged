@@ -39,7 +39,7 @@ module.exports = {
                             return;
                         }
 
-                        res.status(200).send(token);
+                        res.status(200).json({token: token});
                         
                     });
                 } else {
